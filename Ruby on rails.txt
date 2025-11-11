@@ -2,3 +2,6 @@ Tutorial for ruby on rails
 
 1) Cd to project folder
 2) git init -b main (to initialize a repository)
+3) Make a text file
+4) Use gitbash to add the new repo and publish on GitHub
+5) Create branch and start working
