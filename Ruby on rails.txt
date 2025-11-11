@@ -1,0 +1,4 @@
+Tutorial for ruby on rails
+
+1) Cd to project folder
+2) git init -b main (to initialize a repository)
