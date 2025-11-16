@@ -17,3 +17,11 @@ def block_test
 end
 
 block_test { puts ">>> We're in the block!" }
+
+#pass the proc to a method that would otherwise take a block,
+# and we don’t have to rewrite the block over and over!
+floats = [1.2, 3.45, 0.91, 7.727, 11.42, 482.911]
+round_down = Proc.new{|x| x.floor}
+
+ints = floats.collect(&round_down)
+print ints
