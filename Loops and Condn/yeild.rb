@@ -33,3 +33,26 @@ end
 double(5) {}
 double(7) {}
 
+def greeter
+  yield
+end
+
+phrase = Proc.new{puts  "Hello there!"}
+
+greeter(&phrase)
+
+
+numbers_array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+strings_array = numbers_array.map(&:to_s)
+
+puts strings_array
+
+#check for integer and print only that
+odds_n_ends = [:weezard, 42, "Trady Blix", 3, true, 19, 12.345]
+
+ints = lambda {|x| x.is_a? Integer}
+
+ints = odds_n_ends.select(&ints)
+
+puts ints
